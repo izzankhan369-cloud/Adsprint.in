@@ -1,0 +1,57 @@
+/* --- PROGRESS BAR --- */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(to right, var(--accent-blue), var(--accent-purple));
+    width: 0%;
+    z-index: 2000;
+}
+
+/* --- TYPOGRAPHY UPGRADE --- */
+h1, h2 { font-family: 'Playfair Display', serif; }
+
+/* --- HERO BADGE --- */
+.badge {
+    background: rgba(37, 99, 235, 0.15);
+    color: var(--accent-blue);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* --- PROCESS STEPS --- */
+.process-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.step span {
+    font-size: 3rem;
+    font-weight: 800;
+    opacity: 0.2;
+    color: var(--accent-blue);
+}
+
+/* --- FEATURED PRICING --- */
+.pricing-card.featured {
+    border: 2px solid var(--accent-blue);
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 1.5rem 0;
+}
+
+ul { list-style: none; margin-bottom: 2rem; }
+ul li { margin-bottom: 10px; color: var(--text-muted); }
+ul li::before { content: "✓ "; color: var(--accent-blue); }
