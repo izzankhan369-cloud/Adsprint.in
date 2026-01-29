@@ -3,87 +3,464 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adsprint | Premium Digital Agency Goa</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Adsprint - Where Imagination Meets Innovation | AI-Powered Digital Solutions</title>
+    <meta name="description" content="Premium digital agency founded by Izzan in Goa. From local businesses to luxury brands - we deliver AI-powered websites, automation, and marketing systems.">
+    <meta name="keywords" content="AI website development, digital marketing Goa, automation agency, luxury real estate marketing, premium web design">
+    <meta name="author" content="Izzan - Adsprint">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://adsprint.vercel.app/">
+    <meta property="og:title" content="Adsprint - Imagination Meets Innovation">
+    <meta property="og:description" content="AI-powered digital solutions for local businesses and luxury brands. Founded by Izzan in Goa.">
+    <meta property="og:image" content="https://adsprint.vercel.app/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="scroll-progress"></div>
-    <div id="cursor"></div>
-
-    <nav id="navbar">
-        <div class="logo">ADSPRINT</div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#process">Process</a>
-            <a href="#pricing">Packages</a>
-            <a href="https://wa.me/919049328327" class="nav-cta">Let's Talk</a>
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
+    
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Adsprint</span>
+                </a>
+                
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#work" class="nav-link">Work</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <button class="mobile-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
-
-    <main>
-        <section class="hero reveal" id="home">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <span class="badge">Based in Goa, India</span>
-                <h1>Transforming Local Biz into <span class="highlight">Global Brands</span></h1>
-                <p>We combine AI efficiency with premium design to build websites that don't just look good—they sell.</p>
-                <div class="btn-group">
-                    <a href="https://wa.me/919049328327?text=Hi%20Izzan,%20I%20want%20to%20premium-ify%20my%20brand." class="btn btn-primary">Start My Project</a>
-                    <a href="#portfolio" class="btn btn-secondary">View Strategy</a>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#pricing" class="mobile-link">Pricing</a>
+        <a href="#work" class="mobile-link">Work</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">Founded by Izzan • Goa, India</div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Imagination</span>
+                        Meets
+                        <span class="gradient-text">Innovation</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We build AI-powered digital experiences that transform local cafes into destinations 
+                        and luxury brands into market leaders. From ₹12K to enterprise — your growth starts here.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#pricing" class="btn btn-primary">Explore Solutions</a>
+                        <a href="https://wa.me/919049328327?text=Hi%20Izzan!%20I%20discovered%20Adsprint%20and%20I'm%20interested%20in%20exploring%20your%20AI-powered%20digital%20solutions.%20Let's%20discuss!" 
+                           class="btn btn-secondary" 
+                           target="_blank">
+                            <span class="btn-icon">💬</span>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="sphere-container">
+                        <div class="sphere">
+                            <div class="sphere-inner"></div>
+                            <div class="sphere-ring ring-1"></div>
+                            <div class="sphere-ring ring-2"></div>
+                            <div class="sphere-ring ring-3"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section id="process">
+        </div>
+        
+        <div class="scroll-hint">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item tilt-card">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Premium Clients</div>
+                </div>
+                <div class="stat-item tilt-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Successful Projects</div>
+                </div>
+                <div class="stat-item tilt-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">% Automation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services fade-section">
+        <div class="container">
             <div class="section-header">
-                <h2>The Adsprint Method</h2>
-                <p>How we take you from invisible to premium in 7 days.</p>
+                <h2 class="section-title">What We Create</h2>
+                <p class="section-subtitle">End-to-end digital solutions powered by AI and strategic thinking</p>
             </div>
-            <div class="process-grid">
-                <div class="step"><span>01</span> <h4>Audit</h4><p>We analyze your current digital presence (or lack thereof).</p></div>
-                <div class="step"><span>02</span> <h4>Design</h4><p>High-end UI design tailored to your specific industry.</p></div>
-                <div class="step"><span>03</span> <h4>Deploy</h4><p>Fast, secure hosting on Vercel with zero downtime.</p></div>
+            
+            <div class="services-grid">
+                <div class="service-card tilt-card">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Premium Websites</h3>
+                    <p class="service-desc">Lightning-fast, mobile-optimized sites that convert visitors into customers. Built with modern tech and SEO-ready.</p>
+                </div>
+                
+                <div class="service-card tilt-card">
+                    <div class="service-icon">🤖</div>
+                    <h3 class="service-title">AI Automation</h3>
+                    <p class="service-desc">Advanced n8n workflows, ElevenLabs voice AI, and intelligent lead management systems that work 24/7.</p>
+                </div>
+                
+                <div class="service-card tilt-card">
+                    <div class="service-icon">📈</div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-desc">Strategic campaigns across Google, Meta, and WhatsApp that deliver measurable ROI for luxury brands.</p>
+                </div>
+                
+                <div class="service-card tilt-card">
+                    <div class="service-icon">🎯</div>
+                    <h3 class="service-title">Local SEO</h3>
+                    <p class="service-desc">Get discovered on Google Maps. Perfect for cafes, shops, and local businesses wanting more foot traffic.</p>
+                </div>
+                
+                <div class="service-card tilt-card">
+                    <div class="service-icon">💎</div>
+                    <h3 class="service-title">Brand Strategy</h3>
+                    <p class="service-desc">Positioning, messaging, and visual identity that makes luxury brands unforgettable in competitive markets.</p>
+                </div>
+                
+                <div class="service-card tilt-card">
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-title">Lead Funnels</h3>
+                    <p class="service-desc">Automated systems that capture, nurture, and convert leads while you focus on closing deals.</p>
+                </div>
             </div>
-        </section>
-
-        <section id="pricing">
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing fade-section">
+        <div class="container">
             <div class="section-header">
-                <h2>Investment</h2>
+                <h2 class="section-title">Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the solution that fits your business stage</p>
             </div>
-            <div class="grid">
-                <div class="card pricing-card tilt">
-                    <h3>The Portfolio</h3>
-                    <div class="price">₹15,000+</div>
-                    <ul>
-                        <li>Single Page Premium Site</li>
-                        <li>WhatsApp Integration</li>
-                        <li>Mobile Optimized</li>
-                    </ul>
-                    <a href="https://wa.me/919049328327" class="btn btn-secondary">Choose Lite</a>
+            
+            <div class="pricing-grid">
+                <!-- Essential Digital -->
+                <div class="pricing-card tilt-card">
+                    <div class="pricing-badge">For Local Businesses</div>
+                    <h3 class="pricing-title">Essential Digital</h3>
+                    <div class="pricing-amount">
+                        <span class="currency">₹</span>
+                        <span class="price">12,000</span>
+                    </div>
+                    <p class="pricing-subtitle">Perfect for cafes, shops, and local services</p>
+                    
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>One-Page Premium Website</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Mobile Optimization</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Local SEO Setup (Google Maps)</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>WhatsApp Integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Fast Loading Speed</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Contact Form</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/919049328327?text=Hi%20Izzan!%20I'm%20interested%20in%20the%20Essential%20Digital%20package%20(₹12,000)%20for%20my%20local%20business.%20Let's%20discuss!" 
+                       class="btn btn-outline" 
+                       target="_blank">
+                        Start Your Project
+                    </a>
                 </div>
-                <div class="card pricing-card tilt featured">
-                    <span class="badge">Most Popular</span>
-                    <h3>The Business Pro</h3>
-                    <div class="price">₹35,000+</div>
-                    <ul>
-                        <li>Full Lead Gen Funnel</li>
-                        <li>AI Chatbot Integration</li>
-                        <li>Google Maps SEO Audit</li>
-                    </ul>
-                    <a href="https://wa.me/919049328327" class="btn btn-primary">Go Pro</a>
+                
+                <!-- AI System Pro -->
+                <div class="pricing-card pricing-featured tilt-card">
+                    <div class="pricing-badge badge-premium">Most Popular</div>
+                    <h3 class="pricing-title">AI System Pro</h3>
+                    <div class="pricing-amount">
+                        <span class="currency">₹</span>
+                        <span class="price">25,000</span>
+                        <span class="price-range">- ₹50,000</span>
+                    </div>
+                    <p class="pricing-subtitle">For luxury brokers & educational platforms</p>
+                    
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span><strong>Everything in Essential</strong></span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Advanced AI Systems</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>n8n Lead Funnels</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>ElevenLabs Voice Integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Automatic Lead Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Multi-Page Architecture</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>CRM Integration</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Performance Marketing Setup</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/919049328327?text=Hi%20Izzan!%20I'm%20interested%20in%20the%20AI%20System%20Pro%20package%20for%20my%20luxury%20brand.%20I'd%20love%20to%20discuss%20advanced%20automation%20and%20lead%20systems!" 
+                       class="btn btn-primary" 
+                       target="_blank">
+                        Get AI-Powered System
+                    </a>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer style="text-align: center; padding: 50px 0; border-top: 1px solid var(--glass-border);">
-        <p>&copy; 2026 Adsprint Agency. Founded by Izzan.</p>
+            
+            <div class="pricing-note">
+                <p>💡 Custom enterprise solutions available. Contact us for a tailored quote.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="work" class="portfolio fade-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">Real results for real businesses</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-card tilt-card">
+                    <div class="portfolio-image portfolio-img-1"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Zaphia Dsilva</h3>
+                        <p class="portfolio-category">Luxury Real Estate • Goa</p>
+                        <p class="portfolio-desc">AI-powered lead generation system with automated WhatsApp follow-ups. 300% increase in qualified leads.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">AI Automation</span>
+                            <span class="tag">Lead Funnels</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card tilt-card">
+                    <div class="portfolio-image portfolio-img-2"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Renaissance</h3>
+                        <p class="portfolio-category">Premium Education Platform</p>
+                        <p class="portfolio-desc">Complete digital transformation with multi-page website, SEO, and enrollment automation systems.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">Marketing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-card tilt-card">
+                    <div class="portfolio-image portfolio-img-3"></div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Local Cafe Chain</h3>
+                        <p class="portfolio-category">Food & Beverage • Goa</p>
+                        <p class="portfolio-desc">Google Maps optimization and mobile-first website. Doubled walk-in customers in 3 months.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Local SEO</span>
+                            <span class="tag">Mobile Web</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2 class="contact-title">Let's Build Something Extraordinary</h2>
+                    <p class="contact-subtitle">
+                        Whether you're a local cafe or a luxury brand, we'll create a digital presence 
+                        that drives real business results. Based in Goa, serving businesses worldwide.
+                    </p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">👤</span>
+                            <div>
+                                <div class="contact-label">Founder</div>
+                                <div class="contact-value">Izzan</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Goa, India</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <div>
+                                <div class="contact-label">WhatsApp</div>
+                                <a href="https://wa.me/919049328327" class="contact-value contact-link">+91 90493 28327</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/919049328327?text=Hi%20Izzan!%20I%20discovered%20Adsprint%20and%20I'm%20interested%20in%20exploring%20your%20AI-powered%20digital%20solutions.%20Let's%20discuss!" 
+                       class="btn btn-primary btn-large" 
+                       target="_blank">
+                        <span class="btn-icon">💬</span>
+                        Start a Conversation
+                    </a>
+                </div>
+                
+                <div class="contact-visual">
+                    <div class="contact-card tilt-card">
+                        <h3>🚀 Ready to Launch?</h3>
+                        <p>We typically respond within 2 hours during business hours.</p>
+                        <ul class="contact-features">
+                            <li>✓ Free consultation call</li>
+                            <li>✓ Custom project proposal</li>
+                            <li>✓ Transparent pricing</li>
+                            <li>✓ No hidden fees</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Adsprint</span>
+                    </div>
+                    <p class="footer-tagline">Where Imagination Meets Innovation</p>
+                    <p class="footer-location">Founded by Izzan • Goa, India</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Solutions</h4>
+                        <a href="#pricing">Essential Digital</a>
+                        <a href="#pricing">AI System Pro</a>
+                        <a href="#services">Services</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#work">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#home">About</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="https://wa.me/919049328327" target="_blank">WhatsApp</a>
+                        <a href="mailto:hello@adsprint.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Adsprint. Crafted with passion in Goa.</p>
+            </div>
+        </div>
     </footer>
-
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919049328327?text=Hi%20Izzan!%20I%20discovered%20Adsprint%20and%20I'm%20interested%20in%20exploring%20your%20AI-powered%20digital%20solutions.%20Let's%20discuss!" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Contact on WhatsApp">
+        💬
+    </a>
+    
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
-</html>
+                                                                 </html>
